@@ -1,0 +1,118 @@
+.module {
+  background: white;
+  padding: 0 0 10px 0;
+  margin: 0 0 $padding 0;
+  @include breakpoint(small) {
+    padding: 0 0 5px 0;
+    margin: 0 0 $padding/2 0;
+  }
+  box-shadow: 0 0 5px rgba(black, 0.2);
+  position: relative;
+  img {
+    width:100%;
+    height: auto !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+.module-article {
+  //margin: 5px 0 0 50px;
+  //padding-left: 20px;
+  text-align: left;
+  h2 {
+    font-weight: 400;
+    padding-left: 10px;
+    @include breakpoint(small) {
+      font-size: .8rem;
+    }
+  }
+  p {
+    padding:0 10px 0 10px;
+    @include breakpoint(small) {
+      font-size: .8rem;
+      font-size: 14px;
+    }
+  }
+  a {
+    margin: 0;
+    color: $darkBlue;
+    &:hover, &:focus {
+      color: $linkBlue;
+    }
+  }
+  time {
+    color:#fff;
+    //background: $darkBlue;
+    background:rgba(85, 104, 138, .8);
+    font-size: .8rem;
+    height: 40px;
+    line-height: 2;
+    padding: 2px 10px 2px 10px;
+    @include breakpoint(small) {
+      line-height: 2;
+      padding: 2px 10px 2px 10px;
+    }
+  }
+}
+
+.video-embed {
+  p {
+    padding: 0;
+    margin: 0;
+    iframe {
+      width:100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+.article-link {
+    margin: 0 10px 2px 10px;
+    color: $linkBlue;
+    &:hover, &:focus {
+      color: $darkBlue;
+    }
+}
+
+.module-archives {
+  height: 230px;
+  @include breakpoint(small) {
+    height: 180px;
+  }
+  padding: 5px 0 0 0;
+  text-align: center;
+  h2 {
+    @include breakpoint(small) {
+      font-size: .8rem;
+    }
+  }
+  a {
+    padding: 3px 0 3px 0;
+    margin: 10px 0 10px 0;
+    background:rgba(85, 104, 138, .8);
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1;
+    @include breakpoint(small) {
+      font-size: .7rem;
+      padding: 3px 5px 3px 5px;
+    }
+    color: lighten($linkBlue, 10%);
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+}
+
+.module-weather {
+  @include breakpoint(small) {
+      display: none;
+  }
+  padding: 5px 0 0 0;
+  text-align: center;
+  h2 {
+    padding: 5px 0 0 0;
+  }
+}

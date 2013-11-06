@@ -1,0 +1,108 @@
+
+.main-nav {
+  width:100%;
+  margin: 0 auto 0; 
+  font-size: 0;
+  //border-bottom: $offset solid $gray;
+  //padding: 0 $padding;
+  overflow: hidden;
+  a {
+    display: inline-block;
+    position: relative;
+    width: (100%/7); // tiny subtraction fixes dropping down
+    //padding: 25px 0 33px; 
+    height: 100%;
+    background: $darkRed;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    @include breakpoint(small) {
+      font-size: 12px;
+    }
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    &:nth-child(7) { border-right: 1px solid #000; }
+  }
+}
+
+.feature-nav {
+  width:100%;
+  //margin: 0 auto 0; 
+  font-size: 0;
+  //border-bottom: $offset solid $gray;
+  //padding: 0 $padding;
+  overflow: hidden;
+  a {
+    display: inline-block;
+    position: relative;
+    width: (100%/4); // tiny subtraction fixes dropping down
+    //padding: 25px 0 33px; 
+    img {
+      width: 100%;
+      height: auto !important;
+      //opacity: 0;
+      //@include transition(opacity 0.2s ease);
+      //&.loaded {
+      //  opacity: 1;
+      //}
+    }
+    h5{
+      height:100%;
+      background: black;
+      border-right: 1px solid #ccc;
+      text-align: left;
+    }
+  }
+}
+
+.home-navigation {
+  
+  ul {
+    list-style: none;
+  }
+  li {
+    &:nth-child(1) a { border-left-color: darken($p-blue, 25%); }
+    &:nth-child(2) a { border-left-color: darken($p-blue, 12%); }
+    &:nth-child(4) a { border-left-color: lighten($p-blue, 12%); }
+    &:nth-child(5) a { border-left-color: lighten($p-blue, 25%); }
+  }
+  a {
+    display: block;
+    @include background(
+      linear-gradient(
+        #ededed,
+        #dadada
+      )
+    );
+    padding: $padding/2 $padding $padding/2 $padding;
+    position: relative;
+    border-left: 1rem solid $p-blue;
+    @include transition(border 0.2s ease);
+    &:hover, &:active {
+      @include background(
+        linear-gradient(
+          darken(#ededed, 5%),
+          darken(#dadada, 5%)
+        )
+      );
+    }
+    &:after {
+      content: "▶";
+      position: absolute;
+      right: 0.5em;
+      top: 1.0em;
+      color: #c4c4c4;
+    }
+    h3 {
+      color: #4d7277;
+      margin: 0 0 0 0;
+    }
+    h2 {
+      color: #96aab3;
+      margin: 0;
+    }
+  }
+}

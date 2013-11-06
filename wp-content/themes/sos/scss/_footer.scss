@@ -1,0 +1,32 @@
+$footerPadding: 20px;
+
+.site-links {
+  margin: 5px 0 5px 0;
+  text-align: center;
+  overflow: hidden;
+  a {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    padding: 0 25px 0 0;
+    &:hover, &:focus {
+      color: $darkBlue;
+    }
+    img {
+      margin: 5px 0 -8px 0;
+    }
+  }
+}
+
+.footer-copyright {
+  margin: 5px auto 0; 
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+    color: black;
+    //text-transform: uppercase;
+    padding: 0 5px 10px 5px;
+  }
+}

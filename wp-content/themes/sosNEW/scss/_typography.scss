@@ -1,0 +1,90 @@
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+  a {
+    color: #222;  
+    &:hover {
+      color: black;
+    }
+  }
+}
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.1rem 0;
+}
+h2 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #6a6a6a;
+  margin: 0 0 0.1rem 0;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+h5 {
+  margin: 0;
+  font-size: .75rem;
+  text-transform: none;
+  padding: 2px 0 2px 5px;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 80%;
+}
+time {
+  color: #999;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5rem;
+}
+sub {
+    bottom: -0.25rem;
+}
+
+strong, b {
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+  color: black;
+}

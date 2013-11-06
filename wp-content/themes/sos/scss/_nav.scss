@@ -1,0 +1,92 @@
+
+.main-nav {
+  width:100%;
+  margin: 0 auto 0;
+  //need font-size: 0 to compensate for whitespace added when using inline-block, css-tricks has an article describing issue
+  font-size: 0;
+  overflow: hidden;
+  background: $darkRed;
+  a {
+    display: inline-block;
+    position: relative;
+    //box-shadow:1px 0px 3px rgba(50, 50, 50, 1);
+    width: (100%/7 - 0.01); // tiny subtraction fixes dropping down
+    //padding: 25px 0 33px; 
+    height: 100%;
+    background: $darkRed;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: .9rem;
+    @include breakpoint(small) {
+      font-size: .75rem;
+      width: (100%/4 - 0.01);
+      border-bottom: 1px solid #000;
+      border-right: 1px solid #000;
+      border-left: none;
+      &:nth-child(4) { border-right: none; }
+      &:nth-child(5) { border-bottom: none; }
+      &:nth-child(6) { border-bottom: none; }
+      &:nth-child(7) { border-bottom: none; }
+      &:nth-child(8) { border-bottom: none; }
+    }
+    &:hover, &:focus {
+      background: $darkerRed;
+      color: white;
+      @include transition(background 0.1s ease);
+      @include transition(color 0.02s ease);
+    }
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    //border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    &:nth-child(1) { border-left: none; }
+  }
+}
+
+.feature-nav {
+  width:100%;
+  //need font-size: 0 to compensate for whitespace added when using inline-block, css-tricks has an article describing issue
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  a {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    //font-size: 0;
+    color: $linkBlue;
+    display: inline-block;
+    //position: relative;
+    width: (100%/4);
+    &:hover, &:focus {
+      color: white;
+    }
+    
+  }
+
+  img {
+      width: 100%;
+      height: auto !important;
+      //overflow: hidden;
+    }
+
+    h5{
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      font-size: .75rem;
+      padding: 2px 5px 2px 5px;
+      height:39px;
+      line-height: 1;
+      background: black;
+      border-right: 1px solid #404040;
+      &:nth-child(4) { border-right: none; }
+      text-align: left;
+      @include breakpoint(small) {
+        display: none;
+      }
+    }
+  
+}

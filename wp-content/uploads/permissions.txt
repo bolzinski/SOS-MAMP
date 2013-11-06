@@ -1,0 +1,5 @@
+#!/bin/sh
+# create actual script some time for now just save terminal commands, make sure to change to UPLOADS folder first
+sudo chown bolzinski /Volumes/content/00-sos/sos01_staging/wp-content/uploads 
+sudo chgrp _www /Volumes/content/00-sos/sos01_staging/wp-content/uploads
+sudo chmod -R 774 /Volumes/content/00-sos/sos01_staging/wp-content/uploads

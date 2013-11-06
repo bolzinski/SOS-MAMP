@@ -1,0 +1,31 @@
+
+.site-header {
+  display: block;
+  @include breakpoint(small) {
+    display: none;
+  }
+  position: relative;
+  height: 30px;
+  background: $darkRed;
+  text-align: middle;
+  h2 {
+    color: white;
+    padding-left: 100px;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+}
+
+.logo {
+  line-height: .5;
+  text-align: center;
+  img {
+    position: relative;
+    //top: 0;
+    max-width: 960px;
+    width: 100%;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+  }
+}

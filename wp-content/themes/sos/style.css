@@ -826,32 +826,36 @@ img {
   margin: 0; }
   /* line 62, scss/_modules.scss */
   .video-embed p iframe {
-    width: 100%;
+    max-width: 100%;
     padding: 0;
     margin: 0; }
+    @media (max-width: 600px) {
+      /* line 62, scss/_modules.scss */
+      .video-embed p iframe {
+        max-width: 100%; } }
 
-/* line 69, scss/_modules.scss */
+/* line 72, scss/_modules.scss */
 .article-link {
   margin: 0 10px 2px 10px;
   color: #74b3c1; }
-  /* line 72, scss/_modules.scss */
+  /* line 75, scss/_modules.scss */
   .article-link:hover, .article-link:focus {
     color: #55688a; }
 
-/* line 77, scss/_modules.scss */
+/* line 80, scss/_modules.scss */
 .module-archives {
   height: 230px;
   padding: 5px 0 0 0;
   text-align: center; }
   @media (max-width: 600px) {
-    /* line 77, scss/_modules.scss */
+    /* line 80, scss/_modules.scss */
     .module-archives {
       height: 180px; } }
   @media (max-width: 600px) {
-    /* line 84, scss/_modules.scss */
+    /* line 87, scss/_modules.scss */
     .module-archives h2 {
       font-size: .8rem; } }
-  /* line 89, scss/_modules.scss */
+  /* line 92, scss/_modules.scss */
   .module-archives a {
     padding: 3px 0 3px 0;
     margin: 10px 0 10px 0;
@@ -863,23 +867,23 @@ img {
     line-height: 1;
     color: #97c6d1; }
     @media (max-width: 600px) {
-      /* line 89, scss/_modules.scss */
+      /* line 92, scss/_modules.scss */
       .module-archives a {
         font-size: .7rem;
         padding: 3px 5px 3px 5px; } }
-    /* line 103, scss/_modules.scss */
+    /* line 106, scss/_modules.scss */
     .module-archives a:hover, .module-archives a:focus {
       color: white; }
 
-/* line 109, scss/_modules.scss */
+/* line 112, scss/_modules.scss */
 .module-weather {
   padding: 5px 0 0 0;
   text-align: center; }
   @media (max-width: 600px) {
-    /* line 109, scss/_modules.scss */
+    /* line 112, scss/_modules.scss */
     .module-weather {
       display: none; } }
-  /* line 115, scss/_modules.scss */
+  /* line 118, scss/_modules.scss */
   .module-weather h2 {
     padding: 5px 0 0 0; }
 

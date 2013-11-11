@@ -552,7 +552,7 @@ a:hover {
   display: block;
   position: relative;
   height: 30px;
-  background: orange;
+  background: blue;
   text-align: middle; }
   @media (max-width: 600px) {
     /* line 2, scss/_header.scss */
